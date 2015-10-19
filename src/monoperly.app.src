@@ -1,0 +1,17 @@
+{application, monoperly,
+ [
+  {description, "Implement a Monopoly game as a set of RESTful web microservices"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {included_applications, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  crypto,
+                  ranch,
+                  cowboy,
+                  leptus
+                 ]},
+  {mod, { monoperly_app, []}},
+  {env, []}
+ ]}.
