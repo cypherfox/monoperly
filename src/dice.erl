@@ -45,7 +45,7 @@ init(_Route, _Req, State) ->
 
 get("/dice", _Req, State) ->
     Status = ok,  %% HTTP Status 200
-    Value = random:uniform(MAX_DICE_RESULT),
+    Value = random:uniform(?MAX_DICE_RESULT),
     Body = [{<<"number">>, Value}],
     {Status, {json, Body}, State}.
 
